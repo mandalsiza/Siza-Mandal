@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Siza Mandal | Portfolio</title>
+  <style>
+    :root {
+      --primary: #1e3a5f;
+      --accent: #3b82f6;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #1e293b;
+      --muted: #64748b;
+    }
+    * { box-sizing: border-box; scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    /* Navigation Bar */
+    nav {
+      background: var(--card);
+      border-bottom: 1px solid #e2e8f0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: 14px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    nav a {
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    nav a:hover { color: var(--accent); }
+
+    /* Hero Header */
+    header {
+      background: linear-gradient(135deg, #1e3a5f 0%, #2b5876 100%);
+      color: #ffffff;
+      text-align: center;
+      padding: 64px 20px;
+    }
+    header h1 { margin: 0 0 10px; font-size: 2.4rem; letter-spacing: -0.5px; }
+    header p {
+      max-width: 640px;
+      margin: 0 auto 24px;
+      font-size: 1.1rem;
+      color: #e2e8f0;
+    }
+    .btn {
+      display: inline-block;
+      background: #ffffff;
+      color: var(--primary);
+      padding: 10px 22px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    .btn:hover { background: #f1f5f9; }
+
+    /* Main Content Container */
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    section { margin-bottom: 48px; }
+    h2 {
+      color: var(--primary);
+      font-size: 1.5rem;
+      border-bottom: 2px solid #cbd5e1;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+    }
+    .card h3 { margin: 0 0 6px; color: var(--primary); font-size: 1.1rem; }
+    .meta {
+      font-size: 0.85rem;
+      color: var(--muted);
+      font-weight: 600;
+      margin-bottom: 10px;
+      display: block;
+    }
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; }
+    .tag {
+      background: #e0f2fe;
+      color: #0369a1;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.88rem;
+      font-weight: 600;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: #1e293b;
+      color: #cbd5e1;
+      font-size: 0.9rem;
+    }
+    footer a { color: #93c5fd; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <h1>Siza Mandal</h1>
+    <p>Economics, Psychology & Mass Communication Undergraduate • Researcher • Hindustani Classical Vocalist & Educator</p>
+    <a href="#contact" class="btn">Get in Touch</a>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="card">
+        <p>
+          I am a final-year B.A. student majoring in Economics with minors in Psychology and Mass Communication at Bhavan's Vivekananda College, alongside pursuing a Bachelor in Performing Arts in Hindustani Classical Music. My work bridges policy research, behavioral insights, event leadership, and creative storytelling—ranging from environmental policy analysis to organizing national-level quizzes and mentoring young musicians.
+        </p>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience & Leadership</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Secondary Research Intern</h3>
+          <span class="meta">IISPPR • Aug – Sep 2026</span>
+          <p>Co-authored a secondary research paper examining compensatory afforestation, biodiversity loss, and ecological impacts of the Great Nicobar Island Development Project.</p>
+        </div>
+
+        <div class="card">
+          <h3>Co-Facilitator Intern</h3>
+          <span class="meta">Teach For India • May – Jun 2026</span>
+          <p>Facilitated interactive classroom sessions, designed learning activities, and led a student passion project for children from underserved communities.</p>
+        </div>
+
+        <div class="card">
+          <h3>Club Coordinator & Music Head</h3>
+          <span class="meta">Quiz Club & Expressions Club • 2026</span>
+          <p>Organized and hosted four major quiz events—including a national-level competition—and coordinated intercollegiate music events and recruitment drives.</p>
+        </div>
+
+        <div class="card">
+          <h3>Private Music Tutor</h3>
+          <span class="meta">Independent Educator • Aug 2025 – Present</span>
+          <p>Teach personalized Hindustani classical vocal and keyboard classes to students aged 5–18, focusing on foundational technique and notation reading.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education & Credentials</h2>
+      <div class="card">
+        <h3>B.A. in Economics, Psychology & Mass Communication</h3>
+        <span class="meta">Bhavan's Vivekananda College • Final Year</span>
+        <p>Coursework in Economics, Psychology, Mass Communication, and Management Studies. Recipient of the Army Family Welfare Scholarship for three consecutive years.</p>
+        <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 16px 0;" />
+        <h3>Bachelor in Performing Arts & Prabhakar (Hindustani Classical Vocals)</h3>
+        <span class="meta">Raja Man Singh Tomar University</span>
+        <p>Over 13 years of formal training in Hindustani classical vocal music and keyboard performance.</p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills & Interests</h2>
+      <div class="tags">
+        <span class="tag">Secondary & Policy Research</span>
+        <span class="tag">Public Speaking & Event Hosting</span>
+        <span class="tag">Quiz Curation</span>
+        <span class="tag">Hindustani Classical Vocals</span>
+        <span class="tag">Keyboard</span>
+        <span class="tag">Content Creation & Video Editing</span>
+        <span class="tag">Canva Design</span>
+        <span class="tag">Excel & Google Sheets</span>
+        <span class="tag">AI Fluency & Public Policy</span>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p>Interested in collaborating on research, content, or music? Feel free to reach out:</p>
+        <p>
+          <strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a><br />
+          <strong>LinkedIn:</strong> <a href="https://www.linkedin.com" target="_blank">linkedin.com/in/your-profile</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Siza Mandal • Built with HTML & CSS and hosted on GitHub Pages</p>
+  </footer>
+
+</body>
+</html>
